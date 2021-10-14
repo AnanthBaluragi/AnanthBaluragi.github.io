@@ -1,54 +1,57 @@
+<!DOCTYPE html>
 <html>
- <head>
-  <title>Avocado</title>
- </head>
- <style>
-h1 {text-align: center;}
-h2 {text-align: center;}
-h3 {text-align: left;}
-  .square {
-  height: 50px;
-  width: 50px;
-  background-color: #9ACD32;
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
-  .header {
-            background-color: rgb(36, 89, 36);
-            color: white;
-            padding: 5px 10px;
-  </style>
-<body> 
- <body style="background-color:lightblue;">
-  <div class="header">
-  <h1 style="color:white;">All About Avocado</h1>
-  </div>
-  <hr>
-  <h2>Scientific Facts Avocado</h2>
-   <h3>Ph of Avocado</h3>
-    <p>It is slightly Acidic. It's Ph value ranges from 6.27-6.58(Acc to this <a href="https://bit.ly/3FEWJ25">Source</a>)</p>
-   <h3>Nutrients in Avocado</h3>
-    <p><ul>
-       <li>Per 100gram of Avocado<br></li>
-       <li>160 calories<br></li>
-       <li>14.7 g of fat<br></li>
-       <li>8.5 g of carbohydrates<br></li>
-       <li>6.7 g of fiber<br></li>
-       <li>less than 1 g of sugar.</li>
-       </ul>
-       </p>
-   <h3>Taxonomy of Avocado</h3> 
-    <p>The common taxonomy of avocado is Persea americana<br>
-        Others are Persea edulis,<br>
-                Persea floccosa,<br>
-                Persea gigantea,<br>
-                Persea gratissima.<br>
-       
-    </p>
-   <h3>Density of Avocado</h3>
-    <p>The density of Avocado is around 0.9032g/cm^2</p>
-   <h3>Calories and Joule of Avocado</h3>
-    <p>The calories in Avocado is 240 calories and <br>
-       The Joule in Avocado is around 1004.16 Joule.<br>
-    </p>
- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGlTpVSzkT4hvdxN5wBdiCZEkEvv_sXaP9t0FqIgNBwHWDyA/viewform?embedded=true" width="640" height="1514" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></html>
- </body>
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body>
+
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+</body>
+</html>
