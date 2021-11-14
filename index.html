@@ -5,8 +5,23 @@
 <style>
   h1 {text-align: center;}
   h2 {text-align: center;}
+  body {
+animation: change 10s infinite;
+}
+  @keyframes change{
+    10%{background-color:#4285F4}
+    20%{background-color:#DB4437}
+    30%{background-color:#F4B400}
+    40%{background-color:#0F9D58}
+    50%{background-color:#4285F4}
+    60%{background-color:#DB4437}
+    70%{background-color:#F4B400}
+    80%{background-color:#0F9D58}
+    90%{background-color:#4285F4}
+    100%{background-color:#DB4437}
+  }
 .dropbtn {
-  background-color: transparent;
+  background-color: change;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -45,21 +60,7 @@
     text-align: center;
   }
   
-body {
-animation: change 10s infinite;
-}
-  @keyframes change{
-    10%{background-color:#4285F4}
-    20%{background-color:#DB4437}
-    30%{background-color:#F4B400}
-    40%{background-color:#0F9D58}
-    50%{background-color:#4285F4}
-    60%{background-color:#DB4437}
-    70%{background-color:#F4B400}
-    80%{background-color:#0F9D58}
-    90%{background-color:#4285F4}
-    100%{background-color:#DB4437}
-  }
+
 </style>
 </head>
   
