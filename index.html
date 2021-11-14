@@ -52,7 +52,8 @@
 </style>
 </head>
   
-<body style="background-color:lightblue;">
+<body>
+  animation: 10000ms ease-in-out infinite color-change;
   <div class="header">
   <h1 style="color:white;">All About Avocado</h1>
   </div>
@@ -85,4 +86,24 @@
      <img src="https://bit.ly/avocadpic" width="600" height="360" >
       </div>
 </body>
+    @keyframes color-change {
+  0% {
+    background-color: teal;
+  }
+  20% {
+    background-color: gold;
+  }
+  40% {
+    background-color: indianred;
+  }
+  60% {
+    background-color: violet;
+  }
+  80% {
+    background-color: green;
+  }
+  100% {
+    background-color: teal;
+  }
+}
 </html>
